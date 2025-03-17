@@ -10,9 +10,8 @@ uvicorn==0.17.6
 pydantic==1.9.1
 starlette==0.19.1
 
-# Database
+# Database - using SQLAlchemy but removing psycopg2
 SQLAlchemy==1.4.39
-psycopg2-binary==2.9.3  # Use binary instead of psycopg2 for better compatibility
 
 # Authentication & security
 bcrypt==3.2.2
@@ -25,13 +24,3 @@ python-dotenv==0.20.0
 requests==2.28.0
 httpx==0.23.0
 python-multipart==0.0.5
-pytest==7.3.1
-
-# ML essentials (simplified)
-numpy==1.23.5
-openai==0.27.8
-
-# Remove or comment out packages you don't immediately need
-# TensorFlow and PyTorch are very large and often cause deployment issues
-# tensorflow==2.11.0
-# torch==1.13.1
